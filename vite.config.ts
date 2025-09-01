@@ -20,6 +20,9 @@ export default defineConfig({
       "@shared": join(projectDir, "shared"),
     },
   },
+  build: {
+    outDir: "dist", // ✅ 显式指定输出目录
+  },
   plugins: [
     TanStackRouterVite({
       // error with auto import and vite-plugin-pwa
